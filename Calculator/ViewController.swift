@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var resalt: UILabel!
+    @IBAction func digits(_ sender: UIButton) {
+        resalt.text = resalt.text! + String(sender.tag)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
